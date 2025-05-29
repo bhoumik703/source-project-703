@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskTrek - Task Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TaskTrek</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#team">Team</a>
+      </nav>
+      <button id="toggle-theme">🌙</button>
+    </header>
+
+    <section id="about">
+      <h2>About TaskTrek</h2>
+      <p>
+        TaskTrek is your minimal yet powerful to-do list manager built for collaboration. Add, complete, and manage tasks effortlessly in your browser.
+        It's lightweight, responsive, and remembers your tasks using local storage.
+      </p>
+    </section>
+
+    <main id="tasks">
+      <h2>Task List</h2>
+      <div class="task-input">
+        <input type="text" id="new-task" placeholder="Add a new task..." />
+        <button id="add-task">Add</button>
+      </div>
+      <ul id="task-list"></ul>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+    </main>
+
+    <section id="team">
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <div class="member">
+          <img src="https://via.placeholder.com/80" alt="Dev 1">
+          <h3>Aryan</h3>
+          <p>Frontend Developer</p>
+        </div>
+        <div class="member">
+          <img src="https://via.placeholder.com/80" alt="Dev 2">
+          <h3>Priya</h3>
+          <p>JavaScript Engineer</p>
+        </div>
+        <div class="member">
+          <img src="https://via.placeholder.com/80" alt="Dev 3">
+          <h3>Rahul</h3>
+          <p>UI/UX Designer</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ by Team TaskTrek</p>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

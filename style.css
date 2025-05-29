@@ -1,0 +1,179 @@
+### 🎨 `styles.css`
+
+```css
+:root {
+  --bg: #ffffff;
+  --text: #333;
+  --primary: #4a90e2;
+  --accent: #e74c3c;
+  --card: #fafafa;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #eee;
+  --primary: #4a90e2;
+  --accent: #e74c3c;
+  --card: #2c2c2c;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--primary);
+}
+
+nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+#toggle-theme {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+.task-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background: var(--card);
+  color: var(--text);
+}
+
+.task-input button {
+  padding: 0.75rem 1rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #3b7dc4;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+#task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+#task-list li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+#task-list button {
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.filter {
+  background: #ddd;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.filter.active, .filter:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.team-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.member {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  width: 150px;
+}
+
+.member img {
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: var(--primary);
+}

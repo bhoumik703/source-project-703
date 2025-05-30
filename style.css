@@ -1,5 +1,7 @@
 ### 🎨 `styles.css`
 
+//minor changes done on style.css 
+
 ```css
 :root {
   --bg: #ffffff;
@@ -176,4 +178,7 @@ footer {
   margin: 0 0.5rem;
   text-decoration: none;
   color: var(--primary);
+
 }
+
+//Style.css page end

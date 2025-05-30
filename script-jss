@@ -1,3 +1,7 @@
+//script page connected to index.html
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const taskInput = document.getElementById('new-task');
   const addTaskBtn = document.getElementById('add-task');
@@ -78,3 +82,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderTasks();
 });
+
+//End of script 
